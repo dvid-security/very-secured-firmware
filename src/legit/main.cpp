@@ -6,7 +6,6 @@
 #include <BLAKE2b.h>
 #include <Ed25519.h>
 #include <Flag.h>
-
 // Point d'acces WiFi ouvert.
 static const char* AP_SSID = "DVID-OTA";
 
@@ -26,8 +25,8 @@ WebServer server(80);
 Preferences prefs;
 
 // Flag obfusque, depose en NVS au demarrage.
-const uint8_t idx[] = {4, 9, 13, 16, 18, 21, 25, 28, 31, 34, 38, 41, 46, 48, 49, 54, 55, 59, 60, 62, 63, 66, 71, 74, 76};
-String flag = extractFlag(F("rwlsDxfykVuzlImwDy{dn0cqwtmmava_tdwhfzivw7otizhr0utsyb7_utbs1ggngo1kaztnnsgr}"), idx, sizeof(idx));
+const uint8_t idx[] = {1, 6, 8, 17, 26, 33, 36, 42, 44, 51, 52, 60, 66, 70, 74, 82};
+String flag = extractFlag(F("aDhhexVvIcsnbacghDtargwuwr{hosizaLwn3iegykackdlltiz3drdmcrju_sgwcbkyjc3dmiyulfllgv}wvuc"), idx, sizeof(idx));
 
 // Etat de la reception OTA.
 static BLAKE2b hash;             // empreinte du corps (= tout sauf les 64 derniers octets)
