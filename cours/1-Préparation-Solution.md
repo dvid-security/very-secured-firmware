@@ -1,5 +1,8 @@
 Ce training utilise l'ESP32-C6 de la carte DVID (Module wifi).
 
+Pour le flasher, vous devez connecter votre dongle UART comme ceci :
+![Branchement](/files/bb78da22-b97d-4714-93ed-43c99202bf66/afd419e8-f22f-42c6-b0d6-27fa3aa06f11/ac8456be-b186-4547-84cc-4931e14df46c.png)
+
 Installez `esptool` :
 
 ```bash
@@ -41,5 +44,4 @@ Hash of data verified.
 Hard resetting via RTS pin...
 ```
 
-Une fois le flash terminé, réinitialisez la carte. Le nom du réseau WiFi `DVID-OTA` et l'adresse
-`http://192.168.4.1/`.
+Une fois le flash terminé, réinitialisez la carte. Le nom du réseau WiFi `DVID-OTA` et l'adresse `http://192.168.4.1/`.

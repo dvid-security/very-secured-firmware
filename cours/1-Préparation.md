@@ -10,7 +10,7 @@ Une fois flashée, la carte démarre et crée un réseau WiFi ouvert nommé
 `http://192.168.4.1`.
 
 Dans ce training, l'appareil expose une mise à jour OTA (Over The Air) qui
-**vérifie la signature** du firmware : seule une image signée par le fabricant
+vérifie la signature du firmware : seule une image signée par le fabricant
 est acceptée avant d'être installée. Les sources du firmware sont publiées sur
 le dépôt du fabricant :
 [github.com/dvid-security/very-secured-firmware](https://github.com/dvid-security/very-secured-firmware).
